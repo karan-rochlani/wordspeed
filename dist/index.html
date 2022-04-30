@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Word speed</title>
+  <link rel="stylesheet" href="static/css/bootstrap.min.css" >
+</head>
+
+<body style="background-color: lightgrey; text-align: center;">
+  <header style="background-color: grey;">
+    <h1>WordSpeed</h1>
+  </header>
+  <div >
+    <br/>
+    <br/>
+    <!-- Word & Input -->
+    <div >
+      <div">
+        <p>Type the given word
+          <span id="seconds1">5</span> Seconds:</p>
+        <h2 id="current1">hello</h2>
+        <input type="text" placeholder="Start typing..." id="word1" autofocus>
+        <h4  id="message1"></h4>
+
+        <!-- Time & Score Columns -->
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <h3>Time Left:
+              <span id="time1">0</span>
+            </h3>
+          </div>
+          <div class="col-md-6">
+            <h3>Score:
+              <span id="score1">0</span>
+            </h3>
+          </div>
+          <br><br>
+          <div class="col">
+            <h3>High Score:
+              <span id="highscore">0</span>
+            </h3>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div style="background-color: darkgrey;">
+          <div>
+            <div>
+              <h5>Instructions</h5>
+              <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your score
+                will reset</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
